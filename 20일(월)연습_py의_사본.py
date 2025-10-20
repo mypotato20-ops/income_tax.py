@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPRMVDkLY9sLEbjuDfTMA0x",
+      "authorship_tag": "ABX9TyNghgGNdK8/75IGgGXM2O3O",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,12 +28,46 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 1,
       "metadata": {
-        "id": "uuCSVqlAXdVa"
+        "id": "uuCSVqlAXdVa",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a48c1d07-b3bf-4d72-de55-07141f606400"
       },
-      "outputs": [],
-      "source": []
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "소득 수준: 고소득층\n",
+            "소득: 5,500,000원\n",
+            "예상 세금: 1,100,000원\n"
+          ]
+        }
+      ],
+      "source": [
+        "# 소득(income)과 세금(tax) 변수 선언\n",
+        "income = 5500000  # 예시: 550만원\n",
+        "tax = 0\n",
+        "\n",
+        "# if-else 문을 이용한 소득 수준 분류 및 세금 계산\n",
+        "if income <= 1000000:\n",
+        "    level = \"저소득층\"\n",
+        "    tax = income * 0.05\n",
+        "elif income <= 5000000:\n",
+        "    level = \"중간소득층\"\n",
+        "    tax = income * 0.1\n",
+        "else:\n",
+        "    level = \"고소득층\"\n",
+        "    tax = income * 0.2\n",
+        "\n",
+        "# 결과 출력\n",
+        "print(f\"소득 수준: {level}\")\n",
+        "print(f\"소득: {income:,}원\")\n",
+        "print(f\"예상 세금: {tax:,.0f}원\")"
+      ]
     }
   ]
 }
