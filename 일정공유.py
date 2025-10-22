@@ -31,11 +31,11 @@ def load_data():
             return json.load(f)
     return {
         'members': [
-            {"id": "1", "name": "부세미", "total_leave": 30, "used_leave": 0, "color": "#3B82F6"},
-            {"id": "2", "name": "신사장", "total_leave": 20, "used_leave": 0, "color": "#10B981"},
-            {"id": "3", "name": "백혜지", "total_leave": 15, "used_leave": 0, "color": "#F59E0B"},
-            {"id": "4", "name": "이돈", "total_leave": 15, "used_leave": 0, "color": "#EF4444"},
-            {"id": "5", "name": "가선영", "total_leave": 12, "used_leave": 0, "color": "#3B82F6"}
+            {"id": "1", "name": "부세미", "total_leave": 30, "used_leave": 7, "color": "#3B82F6"},
+            {"id": "2", "name": "신사장", "total_leave": 20, "used_leave": 5, "color": "#10B981"},
+            {"id": "3", "name": "백혜지", "total_leave": 15, "used_leave": 4, "color": "#F59E0B"},
+            {"id": "4", "name": "이돈", "total_leave": 15, "used_leave": 3, "color": "#EF4444"},
+            {"id": "5", "name": "가선영", "total_leave": 12, "used_leave": 1, "color": "#3B82F6"}
         ],
         'schedules': []
     }
