@@ -33,7 +33,7 @@ def load_data():
         'members': [
             {"id": "1", "name": "부세미", "total_leave": 15, "used_leave": 0, "color": "#3B82F6"},
             {"id": "2", "name": "신사장", "total_leave": 15, "used_leave": 0, "color": "#10B981"},
-            {"id": "3", "name": "박민수", "total_leave": 15, "used_leave": 0, "color": "#F59E0B"}
+            {"id": "3", "name": "백혜지", "total_leave": 15, "used_leave": 0, "color": "#F59E0B"}
         ],
         'schedules': []
     }
